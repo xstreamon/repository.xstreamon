@@ -1,0 +1,8 @@
+*~
+!zips/
+!addons/
+!.gitignore 
+!addons.xml 
+!addons.xml.md5 
+!*.md
+!*.sh
