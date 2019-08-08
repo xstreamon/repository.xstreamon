@@ -1,7 +1,7 @@
 #!/bin/bash
 # Author: L0RE
 # This Script Generates a new Inventory for a new Version or New Plugin
-REPO=/root/github/repository.xstreamon
+REPO=/root/repo/repository.xstreamon
 if [ "$1" != "" ]
 then
     REPO="$1"
