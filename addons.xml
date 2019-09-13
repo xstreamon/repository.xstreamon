@@ -151,7 +151,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aeon.nox.pvr" version="7.0.4.1" name="Aeon Nox: SiLVO-PVR" provider-name="Grabber66">
+<addon id="skin.aeon.nox.pvr" version="7.0.6" name="Aeon Nox: SiLVO-PVR" provider-name="Grabber66">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -176,7 +176,7 @@
 			<fanart>resources/fanart.jpg</fanart>
 		</assets>
 		<news>[I][COLOR FFFF9800]PVR[/COLOR][/I][CR]- add new PVR Branch[CR]</news>
-	</extension>
+		</extension>
 </addon>
 
 <addon id="skin.unfussy" version="0.4.0" name="Unfussy" provider-name="Louis">
