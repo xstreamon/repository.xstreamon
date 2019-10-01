@@ -151,7 +151,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aeon.nox.pvr" version="7.0.7.1" name="Aeon Nox: SiLVO-PVR" provider-name="Grabber66">
+<addon id="skin.aeon.nox.pvr" version="7.0.7.2" name="Aeon Nox: SiLVO-PVR" provider-name="Grabber66">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
