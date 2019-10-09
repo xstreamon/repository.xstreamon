@@ -43,11 +43,11 @@
  </extension>
 </addon>
 
-<addon id="repository.xstreamon" name="xstreamon Repo" version="1.0.1" provider-name="xStreamon">
+<addon id="repository.xstreamon" name="xstreamon Repo" version="1.0.2" provider-name="xStreamon">
 	<extension point="xbmc.addon.repository" name="XStreamon">
 		<info compressed="true">https://raw.githubusercontent.com/xstreamon/repository.xstreamon/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/xstreamon/repository.xstreamon/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/xstreamon/repository.xstreamon/tree/master/zips/</datadir>
+		<datadir zip="true">https://github.com/xstreamon/repository.xstreamon/raw/master/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>private changes of some addons should not missed</summary>
