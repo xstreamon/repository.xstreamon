@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<<<<<<< HEAD
 <addon id="plugin.video.xstream" name="xStream" version="3.5.13~nightly" provider-name="xStream-Team">
  <requires>
    <import addon="xbmc.python" version="2.14.0"/>
@@ -168,7 +167,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.aeon.nox.pvr" version="7.0.7.2" name="Aeon Nox: SiLVO-PVR" provider-name="Grabber66">
+<addon id="skin.aeon.nox.pvr" version="7.0.7.3" name="Aeon Nox: SiLVO-PVR" provider-name="Grabber66">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -194,7 +193,7 @@
 		<news>[I][COLOR FFFF9800]PVR[/COLOR][/I][CR]- add new PVR Branch[CR]</news>
 		</extension>
 </addon>
-	
+
 <addon id="skin.unfussy" version="0.4.0" name="Unfussy" provider-name="Louis">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
@@ -237,4 +236,5 @@
 		</assets>
 	</extension>
 </addon>
+
 </addons>
