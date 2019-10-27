@@ -46,6 +46,63 @@ xStream 3.5.11
  </extension>
 </addon>
 
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.41" provider-name="tvaddons">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+    </extension>
+</addon>
+
+<addon id="script.unfussy.helper" name="Unfussy Helper" version="0.4.0" provider-name="louis">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py" />
+	<extension point="xbmc.python.pluginsource" library="plugin.py" />
+	<extension point="xbmc.service" library="service.py" start="login" />
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<item library="contextitem.py">
+			<label>30273</label>
+			<visible>
+				  !String.IsEmpty(ListItem.FolderPath) 
+				+ String.StartsWith(ListItem.FolderPath,plugin)
+				+ String.IsEmpty(ListItem.Duration)
+				+ !String.IsEqual(ListItem.Label,..)
+			</visible>
+			</item>
+		</menu>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Unfussy Helper Script</summary>
+		<description lang="en">Helper script to provide features and functions to the Unfussy skin</description>
+		<platform>all</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<source>https://github.com/louisbraun/script.unfussy.helper</source>
+		<email>louis.braun@gmx.de</email>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/icon.png</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="skin.aeon.nox.pvr" version="7.0.8" name="Aeon Nox: SiLVO" provider-name="SiLVO">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
@@ -73,7 +130,7 @@ xStream 3.5.11
 	</extension>
 </addon>
 
-<addon id="skin.unfussy" version="0.4.0" name="Unfussy" provider-name="Louis">
+<addon id="skin.unfussy" version="0.4.1" name="Unfussy" provider-name="Louis">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="script.unfussy.helper" version="0.4.0"/>
