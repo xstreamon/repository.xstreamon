@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.xstream" name="xStream" version="3.5.14~nightly2" provider-name="xStream-Team">
+<addon id="plugin.video.xstream" name="xStream" version="3.5.14~nightly2.1" provider-name="xStream-Team">
  <requires>
    <import addon="xbmc.python" version="2.14.0"/>
    <import addon="repository.xstreamon"/>
@@ -23,6 +23,26 @@
    <platform>all</platform>
    <news>
 3.5.14~nightly2
+- [xcine] add site tnx loki
+- [hdfilme] fix hoster tnx loki
+- [dokus4] add site
+- [dokustream] remove offline
+- [alleserien] code cleanup
+- [filmpalast] code cleanup
+- [flimmerstube] code cleanup
+- [hd-streams.to] code cleanup
+- [hd-streams.org] cloudflare problem remove
+- [kino.cx] keine hoster remove
+- [kindertube] code cleanup
+- [kinoger] code cleanup
+- [kkiste] code cleanup
+- [moviedream] code cleanup
+- [movietown] code cleanup
+- [netzkino] code cleanup
+- [serienstream] code cleanup
+- [streamit.ws] keine hoster remove
+- [topstreamfilm] hoster problem remove 
+- [streamking] code cleanup add serien und jahr    
 - Update service.py
     
 3.5.14~nightly1
@@ -48,7 +68,7 @@
  </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.56" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.57" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
