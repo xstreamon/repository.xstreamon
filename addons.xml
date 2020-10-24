@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.xstream" name="xStream" version="3.5.17.2" provider-name="xStream-Team">
+<addon id="plugin.video.xstream" name="xStream" version="3.5.19~nightly" provider-name="xStream-Team">
  <requires>
     <!-- <import addon="xbmc.python" version="2.14.0"/> -->
     <import addon="script.module.requests"/>
     <import addon="script.module.urlresolver"/>
     <import addon="script.module.six" version="1.11.0"/>
-    <import addon="repository.xstreamon" optional="true"/>
+    <import addon="repository.xstream" optional="true"/>
     <import addon="script.module.metahandler" version="3.0.2.1" optional="true"/>
     <import addon="script.module.inputstreamhelper" version="0.3.3" optional="true"/>
  </requires>
@@ -22,50 +22,23 @@
    <license>GNU GPLv3</license>
    <platform>all</platform>
    <news>
-3.5.17
-- [filmpalast] serien überarbeitet
-- [topstreamfilm] add rating fix duration
-- [kinoger] fix hoster (c|f)sst
-- [general] code optimiert
-- [movieking] fix cover
-- [kinoger] code optimiert
-- [hd-streams_org] neu geschrieben
-- [kinoger] fix serien und hoster
-- [stream.to] seite hinzugefügt
-- [general] code optimiert
-- [dokus4] fix setView
-- [filmpalast] fix setView
-- [movieking] fix setView
-- [moviestream] fix setView
-- [movietown] fix setView
-- [netzkino] fix setView
-- [topstreamfilm] fix setView
-- [general] kleiner fix für autoplay, mehrere für Kodi 19
-- [cinenator] fix hosterauswahl automatisch
-- [dokus4] fix  fix hosterauswahl automatisch
-- [hd-streams.to] fix hosterauswahl automatisch
-- [serienstream] Kodi 19 fix
-- [cinenator] fix next-page
-- [dokus4] add description
-- [filmpalast] add rating
-- [moviestream] add rating
-- [topstreamfilm] fix hoster
-- [movieking] code cleanup
-- [hd-streams_org] hinzugefügt und code cleanup
-- [xStream] Kodi 19 Contextmenu fix usw.
+3.5.19~nightly
+- [kkiste] fix suche
+- [requestHandler] use socket.setdefaulttimeout
+- [streamkiste] fix Serien
+- entfernt alleserien, moviedream, movie4k
+- [hd-streams.to] fix site
+- fix hosterSelect List
+- [HD-Streams.org] fix site
+- [cinenator] fix next page
 
-3.5.16
-- [xStream] Kodi 19 Support Beta
-- [ddl] entfernt keine streams
-- Suchergebnisse verbessert mehrere seiten
-- [HDfilme] Suche fix 
--  mehrere seiten py23 kompatibel
-- [xcine] remove cloudflare problem
-- [Cinenator] add duration fix year
-- [moviedream] add top10 fix for py23
-- [topstreamfilm] fix hoster
-- [kkiste] Add Serie und Release Jahre
-- [Pureanime] add konto und fix suche
+3.5.18
+  06.10.2020
+- [flimmerstube] fix hoster
+- [streamkiste] Seite hinzugefügt
+- [hd-streams.org] fix für Kodi 19
+- [movie4k.space] Seite hinzugefügt
+- [general] fix für Kodi 19 Alpha2
    </news>
    <assets>
      <icon>icon.png</icon>
@@ -189,6 +162,46 @@
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="skin.embuary-leia.mod" version="18.8.9" name="Embuary.Mod (Leia)" provider-name="sualfred, Grabber66">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0"/>
+		<import addon="script.embuary.helper" version="1.3.6"/>
+		<import addon="script.embuary.info" version="1.2.4"/>
+		<import addon="resource.uisounds.embuary" version="0.0.4"/>
+		<import addon="plugin.program.autocompletion" version="1.0.1"/>
+		<import addon="script.skinshortcuts" version="1.0.17"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Embuary skin by Sualfred</summary>
+		<summary lang="de_DE">Embuary Skin von Sualfred</summary>
+		<description lang="en_GB">Embuary is based on the web UI of Emby and has been developed for Emby-For-Kodi and EmbyCon users, but will also work for any other common Kodi setup.</description>
+		<description lang="de_DE">Embuary ist dem Web UI von Emby nachempfunden und für Emby-For-Kodi und EmbyCon Nutzer entwickelt worden, aber funktioniert auch für alle gängigen Kodi Setups.</description>
+		<disclaimer lang="en_GB">No mouse support. With the installation of the skin you agree that you don't use it in combination with blacklisted and illegal Kodi add-ons. I'm not associated with any available build and I won't give any support to blacklisted, banned or illegal third party addons.</disclaimer>
+		<disclaimer lang="de_DE">Keine Maus Unterstützung. Mit der Installation des Skins erklärst du dich damit einverstanden keine verbotenen und illegalen Addons von Kodi damit zu benutzen. Ich stehe in keinerlei Verbindung zu verfübaren Builds und gebe keinen Support für diese oder andere illegalen Drittanbieter-Addons.</disclaimer>
+		<platform>all</platform>
+		<license>CC-BY-NC-ND-4.0</license>
+		<forum>https://emby.media/community/index.php?/topic/49724-beta-embuary-the-emby-kodi-skin/</forum>
+		<source>https://github.com/sualfred/skin.embuary</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshot-08.jpg</screenshot>
+			<screenshot>resources/screenshot-09.jpg</screenshot>
+			<screenshot>resources/screenshot-10.jpg</screenshot>
 		</assets>
 	</extension>
 </addon>
