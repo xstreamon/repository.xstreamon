@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.xstreamon" name="xstreamon Repo" version="1.0.5" provider-name="xStreamon">
+	<extension point="xbmc.addon.repository" name="XStreamon">
+		<info compressed="true">https://raw.githubusercontent.com/xstreamon/repository.xstreamon/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/xstreamon/repository.xstreamon/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/xstreamon/repository.xstreamon/master/zips/</datadir>
+		<dir>
+		    <info compressed="true">https://raw.githubusercontent.com/xstreamon/repository.xstreamon/master/addons.xml</info>
+		    <checksum>https://raw.githubusercontent.com/xstreamon/repository.xstreamon/master/addons.xml.md5</checksum>
+		    <datadir zip="true">https://raw.githubusercontent.com/xstreamon/repository.xstreamon/master/zips/</datadir>
+		    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>private changes of some addons should not missed</summary>
+		<description>private changes of some addons should not missed</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
